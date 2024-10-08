@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bejelentkezés</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="row">
+        <section class="section">
+            <header>
+                <h3>Bejelentkezés</h3>
+                <h4>Kérjük, töltse ki az alábbi információkat</h4>
+            </header>
+            <main>
+                <form id="loginForm">
+                    <div class="form-item box-item">
+                        <input type="email" name="email" placeholder="Email" required>
+                        <small class="errorReq" style="display:none;">Kötelező mező</small>
+                    </div>
+                    <div class="form-item box-item">
+                        <input type="password" name="password" placeholder="Jelszó" required>
+                        <small class="errorReq" style="display:none;">Kötelező mező</small>
+                    </div>
+                    <div class="form-item">
+                        <span id="loginSubmit" class="submit">Bejelentkezés</span>
+                    </div>
+                </form>
+            </main>
+            <footer>
+                <p>Még nincs fiókja? <a href="/index.html">Regisztráljon itt</a></p>
+            </footer>
+            <i class="wave"></i>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

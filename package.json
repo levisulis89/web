@@ -1,0 +1,23 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "crypto": "^1.0.1",
+    "express": "^4.21.0",
+    "filesystem": "^1.0.1",
+    "git": "^0.1.5",
+    "mysql": "^2.18.1",
+    "scss": "^0.2.4",
+    "xlsx": "^0.18.5"
+  }
+}

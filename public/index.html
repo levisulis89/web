@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztráció</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="row">
+        <section class="section">
+            <header>
+                <h3>Regisztráció</h3>
+                <h4>Kérjük, töltse ki az alábbi információkat</h4>
+            </header>
+            <main>
+                <form id="registerForm">
+                    <div class="form-item box-item">
+                        <input type="text" name="name" placeholder="Név" required>
+                        <small class="errorReq" style="display:none;">Kötelező mező</small>
+                    </div>
+                    <div class="form-item box-item">
+                        <input type="email" name="email" placeholder="Email" required>
+                        <small class="errorReq" style="display:none;">Kötelező mező</small>
+                        <small class="errorEmail" style="display:none;">Az email nem érvényes</small>
+                    </div>
+                    <div class="form-item box-item">
+                        <input type="password" name="password" placeholder="Jelszó" required minlength="8">
+                        <small class="errorReq" style="display:none;">Kötelező mező</small>
+                        <small class="errorMinLength" style="display:none;">A jelszónak legalább 8 karakter hosszúnak kell lennie</small>
+                    </div>
+                    <div class="form-item">
+                        <button id="registerSubmit" class="submit">Regisztráció</button>
+                    </div>
+                </form>
+            </main>
+            <footer>
+              <p>Már van fiókja? <a href="/login.html">Jelentkezzen be itt</a></p>
+            </footer>
+            <i class="wave"></i>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
